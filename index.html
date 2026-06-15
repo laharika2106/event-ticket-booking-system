@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Booking System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Event Ticket Booking System</h1>
+        <p>Book tickets for your favorite events</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Event Booking</h2>
+        <p>
+            Discover exciting concerts, movies, and sports events.
+            Book your tickets quickly and easily.
+        </p>
+
+        <a href="#events" class="btn">View Events</a>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+
+        <h2>Upcoming Events</h2>
+
+        <div class="event-details">
+
+            <h3>Event Details</h3>
+
+            <p><strong>Venue:</strong> City Convention Center</p>
+
+            <p><strong>Time:</strong> 6:00 PM</p>
+
+            <p><strong>Ticket Price:</strong> ₹500</p>
+
+        </div>
+
+        <button id="toggleDetails">
+            Hide Details
+        </button>
+
+        <div class="event-container">
+
+            <!-- Movie Event -->
+            <div class="event-card">
+
+                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600" alt="Movie Event">
+
+                <h3>Movie Night</h3>
+
+                <p><strong>Date:</strong> 10 June 2026</p>
+
+                <p><strong>Location:</strong> Hyderabad</p>
+
+                <button>Book Ticket</button>
+
+            </div>
+
+            <!-- Concert Event -->
+            <div class="event-card">
+
+                <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600" alt="Concert Event">
+
+                <h3>Music Concert</h3>
+
+                <p><strong>Date:</strong> 15 June 2026</p>
+
+                <p><strong>Location:</strong> Vijayawada</p>
+
+                <button>Book Ticket</button>
+
+            </div>
+
+            <!-- Sports Event -->
+            <div class="event-card">
+
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600" alt="Sports Event">
+
+                <h3>Sports Championship</h3>
+
+                <p><strong>Date:</strong> 20 June 2026</p>
+
+                <p><strong>Location:</strong> Bangalore</p>
+
+                <button>Book Ticket</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+
+        <h2>Book Your Ticket</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <select required>
+
+                <option value="">
+                    Select Event
+                </option>
+
+                <option>
+                    Movie Night
+                </option>
+
+                <option>
+                    Music Concert
+                </option>
+
+                <option>
+                    Sports Championship
+                </option>
+
+            </select>
+
+            <input
+                type="number"
+                placeholder="Number of Tickets"
+                min="1"
+                required
+            >
+
+            <button type="submit">
+                Submit Booking
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <h3>Contact Us</h3>
+
+        <p>Email: support@eventbooking.com</p>
+
+        <p>Phone: +91 9876543210</p>
+
+        <p>Address: Hyderabad, India</p>
+
+        <p>© 2026 Event Ticket Booking System</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
